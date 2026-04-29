@@ -30,7 +30,7 @@ function App() {
   }, [selectedUser]);
 
   useEffect(() => {
-    const socket = io("https://chatappbackend-1-62nc.onrender.com/");
+    const socket = io("https://chatappbackend-1-62nc.onrender.com");
     socketRef.current = socket;
 
     socket.on("onlineUsers", (users) => {
